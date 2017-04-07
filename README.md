@@ -1,6 +1,4 @@
-# <font color='green'>SPA Mail Service Provider</font>
-
-***
+# SPA Mail Service Provider
 
 SPA Mail Service Provider is a simple way to send emails in an app.
 
@@ -26,7 +24,7 @@ You have to fill the api keys from MailGun and SendGrid. You can quickly registe
 There are some specifics about the 3rd party providers APIs so maybe it's a good idea to read the documentation as well. For example, for MailGun you have to set all emails that you will use for recipients and authorize them. This is, of course, if you don't configure your domain within the service.
 
 4. Launch:
->$ node start
+>$ npm start
 
 
 5. Visit in your browser at: `http://localhost:8080`
