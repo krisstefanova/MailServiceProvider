@@ -1,4 +1,4 @@
-#<font color='green'>SPA Mail Service Provider</font>
+# <font color='green'>SPA Mail Service Provider</font>
 
 ***
 
@@ -10,7 +10,7 @@ Here is how to install the run the app. It uses two 3rd party service providers 
 
 ***
 
-###Installation
+## Installation
 
 If you would like to download the code and try it for yourself:
 
@@ -33,6 +33,6 @@ There are some specifics about the 3rd party providers APIs so maybe it's a good
 
 ***
 
-#### How to use the app and submit data
+## How to use the app and submit data
 
 It's super easy! There are 4 fields that are required. They are all marked with *. If you want to include more than one recipient, please separate them with a comma. For example: To: kristina@domain.com, kstefanova@domain.com
