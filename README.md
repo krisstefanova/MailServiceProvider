@@ -1,6 +1,6 @@
-# SPA Mail Service Provider
+# Simple Mail Service Provider
 
-SPA Mail Service Provider is a simple way to send emails in an app.
+Simple Mail Service Provider is a simple way to send emails in an app.
 
 ***
 
