@@ -7,7 +7,7 @@ module.exports = function(app) {
 		res.render('index.ejs'); // load the index.ejs file
 	});
 
-  app.post('/', function(req, res) {
+	app.post('/', function(req, res) {
     if (blankRequiredField(req)) {
       return res.render('index', {error: "Please, input all required (*) fields"});
     }
