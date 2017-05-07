@@ -17,12 +17,12 @@ function sendDataToEmailProvider(data, callback) {
         failOverServiceProvider.sendEmail(data, function(error, result) {
           //if the email was sent successfully or there is a problem with the failover service provider, notify the caller
           callback(error, result);
-        })
+        });
       } else {
         //if the email is successfully sent, notify the caller
         callback(error, result);
       }
-    })
+    });
   } catch(error) {
     console.log("Error occured " + error.message);
   }
@@ -30,4 +30,4 @@ function sendDataToEmailProvider(data, callback) {
 
 module.exports = {
   sendDataToEmailProvider
-}
+};

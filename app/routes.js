@@ -17,18 +17,18 @@ module.exports = function(app) {
       } else {
         res.render('index.ejs', {success: "You successfully sent an email"});
       }
-    })
-  })
-}
+    });
+  });
+};
 
 /*
 * Performs basic validation of user input
 */
 function blankRequiredField(req) {
-  let check = req.body.emailFrom == "" ||
-    req.body.emailTo == "" ||
-    req.body.subject == "" ||
-    req.body.message == "";
+  let check = req.body.emailFrom === "" ||
+    req.body.emailTo === "" ||
+    req.body.subject === "" ||
+    req.body.message === "";
 
   return check;
 }

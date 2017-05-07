@@ -39,10 +39,10 @@ function createFormBodyRequest(data) {
     from: data.emailFrom,
     subject: data.subject,
     text: data.message,
-  }
+  };
 
-  setIfPresent(bodyRequest, 'cc', data.cc)
-  setIfPresent(bodyRequest, 'bcc', data.bcc)
+  setIfPresent(bodyRequest, 'cc', data.cc);
+  setIfPresent(bodyRequest, 'bcc', data.bcc);
 
   return bodyRequest;
 }
@@ -51,11 +51,11 @@ function createFormBodyRequest(data) {
 * Helper set function
 */
 function setIfPresent(obj, key, value) {
-  if (value != '') {
-    obj[key] = value
+  if (value !== '') {
+    obj[key] = value;
   }
 }
 
 module.exports = {
   sendEmail
-}
+};

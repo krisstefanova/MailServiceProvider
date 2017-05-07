@@ -10,7 +10,7 @@ let credentials = config.emailServiceProviders.sendGrid;
 function sendEmail(data, callback) {
   let header = {
     [credentials.user]: [credentials.api_key]
-  }
+  };
 
   data = createFormBodyRequest(data);
 
@@ -26,7 +26,7 @@ function sendEmail(data, callback) {
         let errorObj = new Error("Something went wrong - StatusCode: " + httpResponse.statusCode);
         callback(errorObj, null);
       }
-    })
+    });
   } catch(error) {
     console.log("Error occured " + error.message);
   }
@@ -67,10 +67,10 @@ function addressMultipleRecepients(data){
   try {
     for (let i in data) {
       if (i === "emailTo" || i === "cc" || i === "bcc") {
-        if (data.i != "" && data[i].indexOf(',') !== -1) {
+        if (data.i !== "" && data[i].indexOf(',') !== -1) {
           data[i] = data[i].split(",").map(function(el) {
             return el.trim();
-          })
+          });
         }
       }
     }
@@ -100,4 +100,4 @@ function addressPersonalizations(dataStructure, recipients, emailSubject) {
 
 module.exports = {
   sendEmail
-}
+};
